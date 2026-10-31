@@ -253,32 +253,4 @@ Day-5/
 │   └── tasks/
 ├── migrations/
 └── tests/
-```
 
-This is a suggested structure; adapt it to the actual implementation.
-
-### Final Verification Checklist
-
-- [ ] CRUD endpoints implemented.
-- [ ] Search and bounded pagination implemented.
-- [ ] Sort fields allowlisted and database queries parameterized.
-- [ ] API-key dependency and authentication tests implemented.
-- [ ] Rate limit and `Retry-After` behavior documented and tested.
-- [ ] WebSocket room isolation and disconnect cleanup implemented.
-- [ ] Celery note-summary task and protected task-status endpoint implemented.
-- [ ] Required success and failure tests executed.
-- [ ] Environment variables and database migrations documented.
-- [ ] Run commands, test commands, coverage and known limitations documented.
-- [ ] No real secrets committed to GitHub.
-
----
-
-## Conclusion
-
-These tasks cover the development of a Notes API using FastAPI, with database safety, authentication, rate limiting, real-time communication, background processing and automated testing.
-
-The goal is to build a backend that is secure, reliable, testable and properly documented.
-
-**Submission:** https://forms.gle/o5kdFJZSV58NUVN28
-
-**Note:** This README documents the tasks and expected behavior. The corresponding application code, tests and configuration must also be implemented and verified before claiming the assignment is complete.
