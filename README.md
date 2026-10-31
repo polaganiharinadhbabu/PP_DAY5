@@ -6,7 +6,7 @@
 
 ---
 
-## Task 11: Build CRUD Endpoints for Notes
+## Task 1: Build CRUD Endpoints for Notes
 
 **Objective:** Create API endpoints to create, read, update and delete notes using input and response models.
 
@@ -30,7 +30,7 @@
 - Return `201 Created` when a note is created.
 - Return `204 No Content` after successful deletion if the endpoint returns no body.
 
-## Task 12: Add Search and Pagination
+## Task 2: Add Search and Pagination
 
 **Objective:** Allow users to search notes by text or status and retrieve results using pagination.
 
@@ -53,7 +53,7 @@ Search by status:
 
 The API should return only the records matching the requested search and pagination parameters.
 
-## Task 13: Allowlist Sort Fields and Use Parameterized Database Queries
+## Task 3: Allowlist Sort Fields and Use Parameterized Database Queries
 
 **Objective:** Make database queries safer and prevent untrusted input from being used directly in SQL statements.
 
@@ -69,7 +69,7 @@ The API should return only the records matching the requested search and paginat
 
 The API should allow sorting only by approved fields and safely pass search values to the database.
 
-## Task 14: Protect Routes with an API-Key Dependency
+## Task 4: Protect Routes with an API-Key Dependency
 
 **Objective:** Protect API endpoints using an API-key authentication dependency.
 
@@ -91,7 +91,7 @@ The API should allow sorting only by approved fields and safely pass search valu
 | Invalid API key | `401 Unauthorized` |
 | Valid API key | Request proceeds if authorized |
 
-## Task 15: Add and Document Rate Limiting
+## Task 5: Add and Document Rate Limiting
 
 **Objective:** Restrict the number of requests a client can make within a defined time window.
 
@@ -115,7 +115,7 @@ The response should include the documented error body and appropriate `Retry-Aft
 
 For multiple application workers, use shared rate-limit state, such as Redis, instead of relying only on a process-local in-memory counter.
 
-## Task 16: Build a WebSocket Endpoint
+## Task 6: Build a WebSocket Endpoint
 
 **Objective:** Implement real-time communication with room isolation and proper disconnection cleanup.
 
@@ -138,7 +138,7 @@ For multiple application workers, use shared rate-limit state, such as Redis, in
 
 Clients should receive only messages they are authorized to receive, and disconnected clients should be removed from their rooms.
 
-## Task 17: Add a Celery Task for Note Summaries
+## Task 7: Add a Celery Task for Note Summaries
 
 **Objective:** Process note-summary generation as a background task.
 
@@ -167,7 +167,7 @@ The API should return `202 Accepted` when the task is accepted for background pr
 
 The task-status endpoint should return the documented task state and enforce the required access controls.
 
-## Task 18: Write Tests for API Behavior and Failures
+## Task 8: Write Tests for API Behavior and Failures
 
 **Objective:** Verify successful operations, validation, security and failure handling.
 
@@ -205,7 +205,7 @@ The task-status endpoint should return the documented task state and enforce the
 
 Do not claim that tests passed until they have actually been executed.
 
-## Task 19: Document Setup, Configuration, Migrations and Limitations
+## Task 9: Document Setup, Configuration, Migrations and Limitations
 
 **Objective:** Provide clear instructions so another developer can configure, run and test the application.
 
